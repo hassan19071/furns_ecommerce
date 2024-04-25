@@ -1,0 +1,27 @@
+.about-us{
+    .head{
+        font-size: 22px;
+        font-weight: 700;
+        width: 80%;
+        margin: auto;
+        @media (max-width:676px) {
+            width: 100%;
+        }
+    }
+    .img{
+        img{
+            height: 300px;
+        }
+    }
+    .text{
+        margin-top: 30px;
+        padding: 5px 5px 5px 0;
+        h5{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}

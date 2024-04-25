@@ -1,0 +1,190 @@
+@use "./variables.scss" as *;
+
+.header {
+  .top-head {
+    background-color: $bg_color;
+    padding: 3px 0;
+    .welcome-msg {
+      color: $main_color;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .settings {
+      .dropdown {
+        button {
+          color: #fff;
+          font-size: 14px;
+          border: none;
+          transition: 0.2s;
+          font-size: 12px;
+          border-radius: 0;
+          &:hover {
+            color: $main_color;
+          }
+        }
+        .dropdown-menu {
+          width: 100px !important;
+          a {
+            font-size: 12px;
+            transition: 0.2s;
+            &:hover,
+            &.active {
+              color: $main_color;
+              background-color: transparent !important;
+            }
+          }
+        }
+      }
+      .langs {
+        button {
+          border-right: 1px solid #474545;
+        }
+      }
+      .currency {
+        button {
+          border-left: 1px solid #474545;
+        }
+      }
+    }
+  }
+  .navbar {
+    background-color: #fff;
+    .logo {
+      img {
+        width: calc(70px + 4vw);
+      }
+    }
+    .burger-icon {
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .icons {
+      li {
+        padding: 0 20px 0px;
+        @media (max-width: 767px) {
+          padding: 0 10px;
+          > span {
+            font-size: 1px;
+          }
+        }
+        position: relative;
+        &.borderr {
+          border-right: 2px solid #efeded;
+        }
+        > span {
+          position: relative;
+          font-size: 18px;
+          cursor: pointer;
+          transition: 0.2s;
+          color: #3b3939;
+          &:hover {
+            color: $main_color;
+          }
+          .num {
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $main_color;
+            border: none;
+            color: #fff;
+            position: absolute;
+            top: -4px;
+            z-index: 1;
+            font-size: 12px;
+            right: 0px;
+            transform: translateX(50%);
+          }
+        }
+        .user-shopping {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.3s;
+          margin-top: 5px;
+          &.active {
+            visibility: visible;
+            opacity: 1;
+          }
+          top: 100%;
+          left: 0;
+          width: 150px;
+          background: #fff;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          transform: translateX(-25%);
+          padding: 0 20px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          a {
+            font-size: 12px;
+            padding: 8px 3px;
+            color: #333333;
+            &:not(:last-of-type) {
+              border-bottom: 1px solid #e7e5e5;
+            }
+            &:hover {
+              color: $main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-links {
+    background-color: $bg_color;
+    .links {
+      a {
+        color: #fff;
+        font-size: 12px;
+        margin: 0 15px;
+        padding: 15px 0;
+        transition: 0.2s;
+        position: relative;
+        svg {
+          font-size: 10px;
+        }
+        &:hover {
+          color: $main_color;
+          .drob-links {
+            visibility: visible;
+            opacity: 1;
+            min-height: 50px !important;
+            transform: rotateX(0deg);
+          }
+        }
+        .drob-links {
+          position: absolute;
+          transition: 0.3s;
+          top: 100%;
+          left: 0;
+          width: 200px;
+          background: #fff;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 0 20px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          opacity: 0;
+          visibility: hidden;
+          transform: rotateX(90deg);
+          transform-origin: top;
+          a {
+            font-size: 12px;
+            padding: 8px 3px;
+            color: #333333;
+            &:not(:last-of-type) {
+              border-bottom: 1px solid #e7e5e5;
+            }
+            &:hover {
+              color: $main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.banners{
+    a{
+        display: block;
+        padding: 100px 20px;
+        &.left{
+            background-image: url(../imgs/_images_banner_1.jpg);
+             background-size: cover;
+            background-position: center;
+            h3{
+                margin-left: auto;
+            }
+        }
+        &.right{
+            background-image: url(../imgs/_images_banner_2.jpg);
+             background-size: cover;
+             background-position: center;
+        }
+        h3{
+            font-size: 25px;
+            font-weight: 600;
+            color: #333;
+            width: 40%;
+            @media (max-width:767px) {
+                width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@use "./variables.scss" as *;
+
+.cart-side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 8;
+  background-color: #0000006d;
+  cursor: pointer;
+  .cart-content {
+    background-color: #fff;
+    width: 280px;
+    height: 100%;
+    margin-left: auto;
+    overflow-y: auto;
+    cursor: default;
+    .top {
+      .head {
+        border-bottom: 1px solid #f4eded;
+        padding: 15px;
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          margin: 0;
+        }
+        .x {
+          button {
+            box-shadow: none;
+            font-size: 12px;
+            padding: 5px;
+            transition: 0.3s;
+            &:hover {
+              background-color: $main_color;
+            }
+          }
+        }
+      }
+      .product-details {
+        padding: 15px;
+        &:not(:first-of-type) {
+          border-top: 1px solid #f4eded;
+        }
+        .img {
+          width: 40%;
+          margin-right: 10px;
+          img {
+            width: 100%;
+          }
+        }
+        .details {
+          .title {
+            h4 {
+              font-size: 13px;
+              margin-bottom: 0;
+            }
+          }
+          .color {
+            span {
+              color: #6b6969;
+              font-size: 12px;
+            }
+          }
+          .price {
+            font-size: 12px;
+            p {
+              margin-bottom: 7px;
+              span {
+                color: $main_color;
+              }
+            }
+            .count {
+              display: flex;
+              div {
+                background-color: #eee;
+                padding: 5px;
+                font-size: 12px;
+                svg {
+                  font-size: 10px;
+                }
+                &:not(:nth-child(2)) {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      padding: 15px;
+      a {
+        background-color: $main_color;
+        color: #fff;
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}

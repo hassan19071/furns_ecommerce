@@ -1,0 +1,61 @@
+@use "./variables.scss" as *;
+
+.mobile-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 8;
+  background-color: #0000006d;
+  cursor: pointer;
+  .links-content {
+    background-color: #fff;
+    overflow: auto;
+    width: 280px;
+    height: 100%;
+    margin-left: auto;
+    cursor: default;
+    .head {
+      border-bottom: 1px solid #f4eded;
+      padding: 15px;
+      img {
+        width: calc(50px + 4vw);
+      }
+      .x {
+        button {
+          box-shadow: none;
+          font-size: 12px;
+          padding: 5px;
+          transition: 0.3s;
+          &:hover {
+            background-color: $main_color;
+          }
+        }
+      }
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      a {
+        font-size: 12px;
+        color: #000;
+        font-weight: 600;
+        padding: 6px 0;
+        transition: 0.2s;
+        svg {
+          font-size: 10px;
+        }
+        &:hover {
+          color: $main_color;
+        }
+      }
+      .down {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+      }
+    }
+  }
+}

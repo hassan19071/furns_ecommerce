@@ -1,0 +1,68 @@
+@use "./variables.scss" as *;
+
+.search-bar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+  background-color: #0000006d;
+  cursor: pointer;
+  .warn{
+    color: #9a0909;
+    font-size: 12px;
+  }
+  .form {
+    background-color: #fff;
+    padding: 40px 0;
+    cursor: default;
+    form {
+      input {
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+        outline: none;
+        min-width: 50%;
+        font-size: 12px;
+        transition: 0.2s;
+        &:focus {
+          border-color: $main_color;
+        }
+      }
+      button {
+        padding: 8px 20px;
+        border: 1px solid $main_color;
+        outline: none;
+        font-size: 12px;
+        background-color: $main_color;
+        color: #fff;
+      }
+    }
+    .popular-words {
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+      margin: 20px 0;
+      a {
+        text-decoration: underline;
+        margin: 5px;
+        color: #555;
+        transition: 0.2s;
+        &:hover {
+          color: $main_color;
+        }
+      }
+    }
+  }
+  .x {
+    button {
+      box-shadow: none;
+      font-size: 12px;
+      padding: 5px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $main_color;
+      }
+    }
+  }
+}

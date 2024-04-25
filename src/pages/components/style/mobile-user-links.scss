@@ -1,0 +1,36 @@
+@use "./variables.scss" as *;
+
+.mobile-user-links {
+  z-index: 6;
+  .links {
+    padding: 8px 0;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      color: #dedbdb;
+      transition: 0.3s;
+      &:hover {
+        color: $main_color;
+      }
+      span {
+        font-size: 9px;
+        font-weight: 600;
+        &.num {
+          top: -5px;
+          right: 0;
+          transform: translateX(50%);
+          background-color: $main_color;
+          width: 15px;
+          height: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #dedbdb;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

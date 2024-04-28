@@ -1,14 +1,14 @@
 import FooterSection from "./components/FooterSection";
-import LoginSection from "./components/LoginSection";
 import Nav from "./components/Nav";
 import SecondHero from "./components/SecondHero";
+import WishlistProducts from "./components/WishlistProducts";
 
-export default function Login() {
+export default function Wishlist() {
   return (
     <>
       <Nav />
-      <SecondHero pageName="Login" linkName="signin" />
-      <LoginSection />
+      <SecondHero pageName="wishlist" linkName="wishlist" />
+      <WishlistProducts />
       <FooterSection />
     </>
   );

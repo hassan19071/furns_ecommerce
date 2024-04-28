@@ -3,21 +3,19 @@ import { Link, useNavigate } from "react-router-dom";
 import "./style/search-bar.scss";
 import { useState } from "react";
 export default function SearchBar({ handleSearch }) {
-
-  let [searchWord,setSearchWord] = useState("");
+  let [searchWord, setSearchWord] = useState("");
   let navigate = useNavigate();
-  let [emptyField,setEmptyField] = useState(false);
+  let [emptyField, setEmptyField] = useState(false);
 
-  function handleSubmit(e){
+  function handleSubmit(e) {
     e.preventDefault();
-    if (searchWord.trim().length > 0){
+    if (searchWord.trim().length > 0) {
       navigate(`/search/${searchWord}`);
       handleSearch();
-    }else{
+    } else {
       setEmptyField(true);
     }
   }
-
 
   return (
     <div
@@ -38,9 +36,14 @@ export default function SearchBar({ handleSearch }) {
         <div className="container">
           <form action="" onSubmit={handleSubmit}>
             {emptyField && <div className="warn">Please type something</div>}
-            <input type="text" placeholder="Enter your search keyword" value={searchWord} onChange={(e)=>{
-              setSearchWord(e.target.value);
-            }} />
+            <input
+              type="text"
+              placeholder="Enter your search keyword"
+              value={searchWord}
+              onChange={(e) => {
+                setSearchWord(e.target.value);
+              }}
+            />
             <button type="submit">
               <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
             </button>

@@ -7,9 +7,9 @@ export default function MobileUserLinks() {
     <div className="mobile-user-links d-lg-none position-fixed bottom-0 start-0 w-100 bg-dark text-white">
       <div className="container text-center">
         <div className="links d-flex justify-content-between">
-          <Link to={"/whishlist"}>
+          <Link to={"/wishlist"}>
             <FontAwesomeIcon icon="fa-solid fa-heart" />
-            <span>Whishlist</span>
+            <span>Wishlist</span>
           </Link>
           <Link to={"/compare"}>
             <FontAwesomeIcon icon="fa-solid fa-code-compare" />

@@ -1,14 +1,14 @@
+import CartProducts from "./components/CartProducts";
 import FooterSection from "./components/FooterSection";
-import LoginSection from "./components/LoginSection";
 import Nav from "./components/Nav";
 import SecondHero from "./components/SecondHero";
 
-export default function Login() {
+export default function Cart() {
   return (
     <>
       <Nav />
-      <SecondHero pageName="Login" linkName="signin" />
-      <LoginSection />
+      <SecondHero pageName="Cart" linkName="cart" />
+      <CartProducts />
       <FooterSection />
     </>
   );

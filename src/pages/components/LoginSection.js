@@ -5,17 +5,17 @@ import { useState } from "react";
 
 export default function LoginSection() {
   let [msgShown, setMsgShowen] = useState(false);
-  let [loading,setLoading] = useState(false);
+  let [loading, setLoading] = useState(false);
 
   function handleSignin(e) {
     e.preventDefault();
     setLoading(true);
-    setTimeout(()=>{
-        setMsgShowen(true);
-        setLoading(false);
-    },2000);
+    setTimeout(() => {
+      setMsgShowen(true);
+      setLoading(false);
+    }, 2000);
   }
-  function removeMsg(){
+  function removeMsg() {
     setMsgShowen(false);
   }
   return (
@@ -26,27 +26,36 @@ export default function LoginSection() {
             <div className="row">
               <div className="col-12">
                 <label>Email *</label>
-                <input type="email" value="example@demo.com" />
+                <input
+                  type="email"
+                  value="example@demo.com"
+                  className="w-100"
+                />
               </div>
               <div className="col-12 mt-4">
                 <label>Password *</label>
-                <input type="password" value="hassankhaled" />
+                <input type="password" value="hassankhaled" className="w-100" />
               </div>
               <div className="col-12 mt-4">
-                <button type="submit" className="d-flex align-items-center justify-content-center">
+                <button
+                  type="submit"
+                  className="d-flex align-items-center justify-content-center"
+                >
                   Signin{" "}
-                  {loading && <div className="spinner-border ms-2" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                  </div>}
+                  {loading && (
+                    <div className="spinner-border ms-2" role="status">
+                      <span className="visually-hidden">Loading...</span>
+                    </div>
+                  )}
                 </button>
               </div>
               <div className="col-md-6 mt-4 text-center">
-                <Link to={"/signup"} className="create">
+                <Link to={"/signup"} className="create link d-block">
                   create an account
                 </Link>
               </div>
               <div className="col-md-6 mt-4 text-center">
-                <Link to={"/"} className="forget">
+                <Link to={"/"} className="forget link d-block">
                   Forget password?
                 </Link>
               </div>

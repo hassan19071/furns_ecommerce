@@ -6,17 +6,16 @@ import MainHero from "./components/MainHero";
 import Nav from "./components/Nav";
 import ProductsSection from "./components/productsSection";
 
-
-export default function Home(){
-    return(
-        <>
-          <Nav/>
-          <MainHero/>
-          <Categories />
-          <ProductsSection />
-          <Banners />
-          <LatestNews />
-          <FooterSection />
-        </>
-    )
+export default function Home() {
+  return (
+    <>
+      <Nav />
+      <MainHero />
+      <Categories />
+      <ProductsSection />
+      <Banners />
+      <LatestNews />
+      <FooterSection />
+    </>
+  );
 }

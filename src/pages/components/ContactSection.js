@@ -40,7 +40,9 @@ export default function ContactSection() {
               <div className="form">
                 <form className="row" action="">
                   <div className="col-md-6">
-                    <label name="first-name" htmlFor="firstname">First Name</label>
+                    <label name="first-name" htmlFor="firstname">
+                      First Name
+                    </label>
                     <input
                       type="text"
                       className="form-control"
@@ -49,7 +51,9 @@ export default function ContactSection() {
                     />
                   </div>
                   <div className="col-md-6 mt-md-0 mt-4">
-                    <label name="last-name" htmlFor="lastname">Last Name</label>
+                    <label name="last-name" htmlFor="lastname">
+                      Last Name
+                    </label>
                     <input
                       type="text"
                       className="form-control"
@@ -58,7 +62,9 @@ export default function ContactSection() {
                     />
                   </div>
                   <div className="col-12 mt-4">
-                    <label name="subject" htmlFor="subject">subject</label>
+                    <label name="subject" htmlFor="subject">
+                      subject
+                    </label>
                     <input
                       type="text"
                       className="form-control"
@@ -67,7 +73,9 @@ export default function ContactSection() {
                     />
                   </div>
                   <div className="col-12 mt-4">
-                    <label name="message" htmlFor="message">Message</label>
+                    <label name="message" htmlFor="message">
+                      Message
+                    </label>
                     <textarea
                       className="form-control"
                       aria-label="message"

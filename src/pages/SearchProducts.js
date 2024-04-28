@@ -4,17 +4,19 @@ import Nav from "./components/Nav";
 import SecondHero from "./components/SecondHero";
 import SearchProductsFilter from "./components/SearchProductsFilter";
 
+export default function SearchProducts() {
+  let searchWord = useParams();
 
-
-export default function SearchProducts(){
-    let searchWord = useParams();
-
-    return(
-        <>
-          <Nav/>
-          <SecondHero pageName={"search"} linkName={searchWord.searchWord} parentLink={"search"}/>
-          <SearchProductsFilter />
-          <FooterSection />
-        </>
-    )
+  return (
+    <>
+      <Nav />
+      <SecondHero
+        pageName={"search"}
+        linkName={searchWord.searchWord}
+        parentLink={"search"}
+      />
+      <SearchProductsFilter />
+      <FooterSection />
+    </>
+  );
 }

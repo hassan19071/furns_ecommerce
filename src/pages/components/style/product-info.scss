@@ -1,0 +1,78 @@
+@use "./variables.scss" as *;
+
+.product-details {
+  .imgs {
+    .other {
+      img {
+        width: calc(100% / 3 - 10px);
+        cursor: pointer;
+        &:nth-child(2) {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .details {
+    h5 {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 14px;
+    }
+    .selects {
+      label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      select {
+        width: 400px;
+        font-size: 12px;
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+        color: #333;
+        border: 1px solid #f4eded;
+        outline: none;
+        padding: 6px 10px;
+        &:focus {
+          border-color: $main_color;
+        }
+      }
+    }
+    .qty {
+      display: flex;
+      div {
+        background-color: #eee;
+        padding: 5px 10px;
+        font-size: 12px;
+        user-select: none;
+        svg {
+          font-size: 10px;
+        }
+        &:not(:nth-child(2)) {
+          cursor: pointer;
+        }
+      }
+      button {
+        padding: 5px 20px;
+        border: 1px solid $main_color;
+        outline: none;
+        font-size: 12px;
+        background-color: $main_color;
+        color: #fff;
+      }
+    }
+  }
+  .adds {
+    div {
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        color: $main_color;
+      }
+    }
+  }
+}

@@ -20,15 +20,15 @@ export default function Nav() {
 
   let params = useParams();
 
-  useEffect(()=>{
-      setNavSectionHidden({
-        search: false,
-        userShopping: false,
-        cartSide: false,
-        settings: false,
-        mobileLinks: false,
-      })
-  },[params])
+  useEffect(() => {
+    setNavSectionHidden({
+      search: false,
+      userShopping: false,
+      cartSide: false,
+      settings: false,
+      mobileLinks: false,
+    });
+  }, [params]);
 
   function handleSearch() {
     setNavSectionHidden({
@@ -175,7 +175,7 @@ export default function Nav() {
                   >
                     <Link to={"/signin"}>Sign in</Link>
                     <Link to={"/cart"}>Cart</Link>
-                    <Link to={"/whishlist"}>Whishlist</Link>
+                    <Link to={"/wishlist"}>Wishlist</Link>
                     <Link to={"/compare"}>Compare</Link>
                   </div>
                 </li>

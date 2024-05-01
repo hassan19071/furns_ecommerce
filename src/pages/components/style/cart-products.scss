@@ -18,10 +18,10 @@
           color: $main_color;
           font-weight: bold;
           padding: 6px 20px;
-          font-size: 14px;
+          font-size: 18px;
           span {
             color: #474646;
-            font-size: 13x;
+            font-size: 16px;
             margin-left: 10px;
           }
         }
@@ -29,7 +29,7 @@
     }
     thead {
       th {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: bold;
         text-transform: uppercase;
         padding: 15px;
@@ -43,7 +43,7 @@
         width: 100px !important;
       }
       p {
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 600;
       }
       .qty {
@@ -51,7 +51,7 @@
         div {
           background-color: #eee;
           padding: 5px 10px;
-          font-size: 12px;
+          font-size: 16px;
           user-select: none;
           svg {
             font-size: 10px;
@@ -65,7 +65,7 @@
     .actions {
       svg {
         color: #333;
-        font-size: 15px;
+        font-size: 17px;
         transition: 0.2s;
         cursor: pointer;
         &:hover {
@@ -86,10 +86,10 @@
         box-shadow: none !important;
         outline: none !important;
         border-radius: 0;
-        padding: 6px;
-        font-size: 12px;
+        padding:8px 6px;
+        font-size: 15px;
         &::placeholder {
-          font-size: 12px;
+          font-size: 15px;
         }
         &:focus {
           border: 1px solid $main_color !important;
@@ -98,8 +98,8 @@
       button {
         background-color: $main_color;
         border: 1px solid transparent !important;
-        padding: 6px;
-        font-size: 12px;
+        padding:8px 6px;
+        font-size: 15px;
         color: #fff;
         transition: 0.2s;
         &:hover {
@@ -109,10 +109,10 @@
     }
     .checkout,
     .clear {
-      padding: 6px 20px;
+      padding: 8px 20px;
       background-color: $main_color;
       color: #fff;
-      font-size: 12px;
+      font-size: 15px;
       transition: 0.2s;
       text-transform: uppercase;
       border: 1px solid transparent;
@@ -135,10 +135,10 @@
   }
   .add-to-cart {
     button {
-      padding: 6px 10px;
+      padding: 6px 12px;
       background-color: $main_color;
       color: #fff;
-      font-size: 10px;
+      font-size: 13px;
       transition: 0.2s;
       text-transform: uppercase;
       border: 1px solid transparent;
@@ -154,7 +154,7 @@
     width: 100% !important;
   }
   th {
-    font-size: 12px;
+    font-size: 16px;
     width: 100px;
     color: #555;
   }
@@ -170,22 +170,22 @@
       width: 100px;
     }
     h5 {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 600;
       margin-top: 10px;
       padding: 0 15px;
     }
   }
   p.description {
-    font-size: 12px;
+    font-size: 15px;
     padding: 5px 15px;
   }
   .price {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
   }
   .stock {
-    font-size: 12px;
+    font-size: 15px;
     color: #30a014;
     font-weight: 700;
   }

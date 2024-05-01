@@ -9,14 +9,14 @@ export default function NoPageFounded() {
       >
         <div className="content text-center">
           <div className="img">
-            <img src={img} alt="error page" width={"50%"} />
+            <img src={img} alt="error page" width={"60%"} />
           </div>
           <h3
-            style={{ fontSize: "20px", fontWeight: "bold", marginTop: "20px" }}
+            style={{ fontSize: "24px", fontWeight: "bold", marginTop: "20px" }}
           >
             That Page Can’t be found!
           </h3>
-          <p style={{ fontSize: "12px", fontWeight: "400" }}>
+          <p style={{ fontSize: "15px", fontWeight: "400" }}>
             It looks like nothing was found at this location.
           </p>
           <Link
@@ -25,7 +25,7 @@ export default function NoPageFounded() {
               background: "rgb(255, 112, 4)",
               color: "#fff",
               padding: "8px 15px",
-              fontSize: "12px",
+              fontSize: "15px",
             }}
           >
             Go Back

@@ -3,19 +3,19 @@
 .mobile-user-links {
   z-index: 6;
   .links {
-    padding: 8px 0;
+    padding: 10px 0;
     a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 12px;
+      font-size: 15px;
       color: #dedbdb;
       transition: 0.3s;
       &:hover {
         color: $main_color;
       }
       span {
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 600;
         &.num {
           top: -5px;

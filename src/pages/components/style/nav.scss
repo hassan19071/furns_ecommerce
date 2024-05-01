@@ -6,7 +6,7 @@
     padding: 3px 0;
     .welcome-msg {
       color: $main_color;
-      font-size: 12px;
+      font-size: 15px;
       font-style: italic;
       font-weight: 400;
     }
@@ -17,7 +17,6 @@
           font-size: 14px;
           border: none;
           transition: 0.2s;
-          font-size: 12px;
           border-radius: 0;
           &:hover {
             color: $main_color;
@@ -26,7 +25,7 @@
         .dropdown-menu {
           width: 100px !important;
           a {
-            font-size: 12px;
+            font-size: 14px;
             transition: 0.2s;
             &:hover,
             &.active {
@@ -52,12 +51,12 @@
     background-color: #fff;
     .logo {
       img {
-        width: calc(70px + 4vw);
+        width: calc(80px + 4vw);
       }
     }
     .burger-icon {
       cursor: pointer;
-      font-size: 20px;
+      font-size: 25px;
     }
     .icons {
       li {
@@ -65,7 +64,7 @@
         @media (max-width: 767px) {
           padding: 0 10px;
           > span {
-            font-size: 1px;
+            font-size: 3px;
           }
         }
         position: relative;
@@ -74,7 +73,7 @@
         }
         > span {
           position: relative;
-          font-size: 18px;
+          font-size: 20px;
           cursor: pointer;
           transition: 0.2s;
           color: #3b3939;
@@ -120,7 +119,7 @@
           padding: 0 20px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           a {
-            font-size: 12px;
+            font-size: 14px;
             padding: 8px 3px;
             color: #333333;
             &:not(:last-of-type) {
@@ -139,13 +138,13 @@
     .links {
       a {
         color: #fff;
-        font-size: 12px;
+        font-size: 14px;
         margin: 0 15px;
         padding: 15px 0;
         transition: 0.2s;
         position: relative;
         svg {
-          font-size: 10px;
+          font-size: 12px;
         }
         &:hover {
           color: $main_color;
@@ -173,7 +172,7 @@
           transform: rotateX(90deg);
           transform-origin: top;
           a {
-            font-size: 12px;
+            font-size: 14px;
             padding: 8px 3px;
             color: #333333;
             &:not(:last-of-type) {

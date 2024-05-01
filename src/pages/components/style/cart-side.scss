@@ -11,7 +11,7 @@
   cursor: pointer;
   .cart-content {
     background-color: #fff;
-    width: 280px;
+    width: 300px;
     height: 100%;
     margin-left: auto;
     overflow-y: auto;
@@ -21,14 +21,14 @@
         border-bottom: 1px solid #f4eded;
         padding: 15px;
         h3 {
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 700;
           margin: 0;
         }
         .x {
           button {
             box-shadow: none;
-            font-size: 12px;
+            font-size: 14px;
             padding: 5px;
             transition: 0.3s;
             &:hover {
@@ -52,18 +52,18 @@
         .details {
           .title {
             h4 {
-              font-size: 13px;
+              font-size: 15px;
               margin-bottom: 0;
             }
           }
           .color {
             span {
               color: #6b6969;
-              font-size: 12px;
+              font-size: 15px;
             }
           }
           .price {
-            font-size: 12px;
+            font-size: 15px;
             p {
               margin-bottom: 7px;
               span {
@@ -75,9 +75,9 @@
               div {
                 background-color: #eee;
                 padding: 5px;
-                font-size: 12px;
+                font-size: 15px;
                 svg {
-                  font-size: 10px;
+                  font-size: 13px;
                 }
                 &:not(:nth-child(2)) {
                   cursor: pointer;
@@ -94,7 +94,7 @@
         background-color: $main_color;
         color: #fff;
         padding: 8px 10px;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 600;
       }
     }

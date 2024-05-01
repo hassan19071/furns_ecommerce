@@ -20,12 +20,12 @@
       border-bottom: 1px solid #f4eded;
       padding: 15px;
       img {
-        width: calc(50px + 4vw);
+        width: calc(60px + 4vw);
       }
       .x {
         button {
           box-shadow: none;
-          font-size: 12px;
+          font-size: 15px;
           padding: 5px;
           transition: 0.3s;
           &:hover {
@@ -39,13 +39,13 @@
       flex-direction: column;
       padding: 15px;
       a {
-        font-size: 12px;
+        font-size: 15px;
         color: #000;
         font-weight: 600;
         padding: 6px 0;
         transition: 0.2s;
         svg {
-          font-size: 10px;
+          font-size: 13px;
         }
         &:hover {
           color: $main_color;

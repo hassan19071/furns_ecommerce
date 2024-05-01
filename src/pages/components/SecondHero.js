@@ -18,7 +18,7 @@ export default function SecondHero({ pageName, linkName, parentLink }) {
         <div className="content text-center">
           <h1
             style={{
-              fontSize: "22px",
+              fontSize: "27px",
               fontWeight: "700",
               textTransform: "uppercase",
             }}
@@ -29,7 +29,7 @@ export default function SecondHero({ pageName, linkName, parentLink }) {
             <ol
               className="breadcrumb d-flex justify-content-center"
               style={{
-                fontSize: "12px",
+                fontSize: "15px",
                 textTransform: "uppercase",
               }}
             >

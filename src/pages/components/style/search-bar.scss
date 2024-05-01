@@ -11,7 +11,7 @@
   cursor: pointer;
   .warn {
     color: #9a0909;
-    font-size: 12px;
+    font-size: 15px;
   }
   .form {
     background-color: #fff;
@@ -23,7 +23,7 @@
         border: 1px solid #ddd;
         outline: none;
         min-width: 50%;
-        font-size: 12px;
+        font-size: 15px;
         transition: 0.2s;
         &:focus {
           border-color: $main_color;
@@ -33,13 +33,13 @@
         padding: 8px 20px;
         border: 1px solid $main_color;
         outline: none;
-        font-size: 12px;
+        font-size: 15px;
         background-color: $main_color;
         color: #fff;
       }
     }
     .popular-words {
-      font-size: 14px;
+      font-size: 16px;
       color: #000;
       font-weight: 600;
       margin: 20px 0;
@@ -57,7 +57,7 @@
   .x {
     button {
       box-shadow: none;
-      font-size: 12px;
+      font-size: 15px;
       padding: 5px;
       transition: 0.3s;
       &:hover {

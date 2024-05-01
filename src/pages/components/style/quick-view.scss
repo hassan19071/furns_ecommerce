@@ -15,7 +15,7 @@
   .product-detailss {
     width: 700px;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px 20px;
     margin: auto;
     overflow: auto !important;
     @media (max-width: 767px) {
@@ -40,21 +40,21 @@
     }
     .details {
       h5 {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
       }
       p {
-        font-size: 12px;
+        font-size: 15px;
       }
       .selects {
         label {
           display: block;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: 600;
         }
         select {
           width: 400px;
-          font-size: 12px;
+          font-size: 15px;
           @media (max-width: 500px) {
             width: 100%;
           }
@@ -72,10 +72,10 @@
         div {
           background-color: #eee;
           padding: 5px 10px;
-          font-size: 12px;
+          font-size: 15px;
           user-select: none;
           svg {
-            font-size: 10px;
+            font-size: 15px;
           }
           &:not(:nth-child(2)) {
             cursor: pointer;
@@ -85,7 +85,7 @@
           padding: 5px 20px;
           border: 1px solid $main_color;
           outline: none;
-          font-size: 12px;
+          font-size: 14px;
           background-color: $main_color;
           color: #fff;
         }
@@ -93,7 +93,7 @@
     }
     .adds {
       div {
-        font-size: 12px;
+        font-size: 14px;
         cursor: pointer;
         transition: 0.2s;
         &:hover {

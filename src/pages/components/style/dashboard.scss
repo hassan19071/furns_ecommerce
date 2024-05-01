@@ -5,14 +5,14 @@
     .personal-settings {
       border: 1px solid #eee;
       li {
-        padding: 10px 20px;
-        font-size: 12px;
+        padding: 12px 20px;
+        font-size: 15px;
         font-weight: 500;
         text-transform: uppercase;
         cursor: pointer;
         transition: 0.2s;
         svg {
-          width: 30px;
+          width: 40px;
         }
         &:not(:first-of-type) {
           border-top: 1px solid #eee;
@@ -28,27 +28,27 @@
       border: 1px solid #eee;
       padding: 20px;
       h4 {
-        font-size: 17px;
+        font-size: 20px;
         font-weight: 600;
         border-bottom: 1px solid #eee;
         padding-bottom: 10px;
         margin-bottom: 20px;
       }
       .hello {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 10px;
         span {
           font-weight: bold;
         }
       }
       p {
-        font-size: 13px;
+        font-size: 15px;
       }
       .orders {
         border-top: 2px solid $main_color;
         border-radius: 5px;
         padding: 10px 5px;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 600;
       }
       .border-el {
@@ -64,7 +64,7 @@
           background-color: #fff;
           color: $main_color;
           border: none;
-          font-size: 12px;
+          font-size: 15px;
           border: 1px solid $main_color;
           transition: 0.2s;
           &:hover {
@@ -75,12 +75,12 @@
       }
       .personal-info {
         h2 {
-          font-size: 18px;
+          font-size: 21px;
           font-weight: 600;
         }
         form {
           label {
-            font-size: 12px;
+            font-size: 15px;
             font-weight: 600;
           }
           input {
@@ -99,7 +99,7 @@
             color: #fff;
             padding: 10px;
             border: none;
-            font-size: 12px;
+            font-size: 15px;
             font-weight: 600;
             text-transform: uppercase;
             transition: 0.3s;

@@ -10,6 +10,7 @@
       .img {
         img {
           transform: translateY(0);
+          width: 90% !important;
         }
       }
       .text {
@@ -30,7 +31,7 @@
         transition: 1.5s;
       }
       p {
-        transform: translateY(400%);
+        transform: translateY(450%);
         transition: 1.5s;
       }
       h3 {
@@ -54,7 +55,7 @@
         font-size: 15px;
         font-weight: 600;
         transition: background-color 0.3s, transform 1.5s;
-        transform: translateY(300%);
+        transform: translateY(350%);
         display: inline-block;
         &:hover {
           background-color: #000;

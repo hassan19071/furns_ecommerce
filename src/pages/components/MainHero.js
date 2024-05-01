@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ImgOne from "./imgs/slider-1.png";
-import ImgTwo from "./imgs/slider-2.png";
+import imgOne from "./imgs/slider-1.png";
+import imgTwo from "./imgs/slider-2.png";
 import "./style/main-hero.scss";
 
 export default function MainHero() {
@@ -29,7 +29,7 @@ export default function MainHero() {
                 </div>
                 <div className="col-lg-6 mb-lg-0 mb-4">
                   <div className="img text-lg-end text-center">
-                    <img src={ImgOne} alt="slider img" />
+                    <img src={imgOne} alt="slider img"/>
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function MainHero() {
                 </div>
                 <div className="col-lg-6 mb-lg-0 mb-4">
                   <div className="img text-lg-end text-center">
-                    <img src={ImgTwo} alt="slider img" />
+                    <img src={imgTwo} alt="slider img" />
                   </div>
                 </div>
               </div>

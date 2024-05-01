@@ -3,7 +3,6 @@
     display: block;
     padding: 100px 20px;
     &.left {
-      background-image: url(../imgs/_images_banner_1.jpg);
       background-size: cover;
       background-position: center;
       h3 {
@@ -11,7 +10,6 @@
       }
     }
     &.right {
-      background-image: url(../imgs/_images_banner_2.jpg);
       background-size: cover;
       background-position: center;
     }

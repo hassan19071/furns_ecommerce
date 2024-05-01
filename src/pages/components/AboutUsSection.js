@@ -1,5 +1,5 @@
-import aboutImg1 from "../components/imgs/_images_about_01.jpg";
-import aboutImg2 from "../components/imgs/_images_about_02.jpg";
+import aboutImg1 from "./imgs/_images_about_01.jpg";
+import aboutImg2 from "./imgs/_images_about_02.jpg";
 import "./style/about-section.scss";
 
 export default function AboutUsSection() {

@@ -1,7 +1,6 @@
 {
   "name": "furns_ecommerce",
   "version": "0.1.0",
-  "homepage": "https://hassan19071.github.io/furns_deployment/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
